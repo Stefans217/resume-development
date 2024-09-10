@@ -1,0 +1,41 @@
+html{
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font: 1.3em "OCR A Std", monospace;
+}
+
+.mycontainer {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    background-color: black;
+    width: fit-content;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-inline: auto;
+    color: white;
+    padding: 8px;
+    font: 20px "OCR A Std", monospace;
+}
+
+
+.header a {
+    display: inline-block;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    
+}
