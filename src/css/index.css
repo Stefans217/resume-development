@@ -11,9 +11,10 @@ body {
 }
 
 .mycontainer {
-    height: 100%;
+    height: 200%;
     padding: 0;
     margin: 0;
+    background-color: lightgray;
 }
 
 #down{
@@ -53,24 +54,25 @@ body {
 }
 
 .top {
-    background-color: white;
     width: 100%;
-    height: 50%;
+    height: 50vh;
     padding: 15px;
+    background-image: url("./../../images/pexels-solenfeyissa-5593563.jpg")
 }
 
-.text-container{
+.top-text-container{
     position: relative;
     top: 50%;
     text-align: center;
 }
 
-.bottom {
-    background-color: rgba(211, 211, 211, 0.785);
-    height: 50%;
-    width: 100%;
-    padding: 15px;
+
+#main-text-container{
+    position: relative;
+    top: 10%;
+    text-align: center;
 }
+
 
 .top p{
     text-align: center;
@@ -78,18 +80,46 @@ body {
 }
 
 
+.scroll-container{
+    width: 50px;
+}
+
+
+  /* Scroll Line styles */
+.scroll-line {
+    position: relative;
+    right: 25%;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.33);
+    margin: 10px auto;
+    animation: grow 3s forwards;
+  }
+  
+  @keyframes grow {
+    from {
+      height: 0;
+    }
+    to {
+      height: 350px;
+    }
+  }
+
 .circle {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
+    transition-duration: 800ms;
     width: 200px;
     height: 200px;
     background-color: steelblue;
     border-radius: 50%;
     border: none;
     cursor: pointer;
-    border: 2px solid black;
+    box-shadow: 5px 5px 10px 2px rgb(0 0 0 / .8);
+    background-image: url("./../../images/20240819_212223548_iOS.jpg");
+    background-size: cover;
+    
 }
 
 .circle:hover{
